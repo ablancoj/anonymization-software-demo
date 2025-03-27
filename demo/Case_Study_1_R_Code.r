@@ -24,7 +24,7 @@ library(ineq)       # for Lorenz curves
 getwd()
 
 # Set working directory - set to the path on your machine
-setwd("C:/Users/Usuario/Dropbox/courses/ISGlobal_Anonymization/data")
+setwd("../data")
 
 # Save working directory
 mainDir <- getwd()

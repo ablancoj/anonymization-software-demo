@@ -3,6 +3,7 @@
 ################################
 
 install.packages("sdcMicro")
+rm(list = ls())  # to clean out workspace
 library(sdcMicro) 
 
 ############################
@@ -23,7 +24,7 @@ library(sdcMicro)
 # Set working directory #
 #########################
 
-wd <- "C:/Users/ablancoj/Dropbox/courses/ISGlobal_Anonymization/data"
+wd <- "../data"
 setwd(wd)
 file_name <- "adult.csv"
 

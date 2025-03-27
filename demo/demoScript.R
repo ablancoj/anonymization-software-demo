@@ -5,7 +5,7 @@ library(tidyverse)
 # LOAD DATA #
 #############
 
-setwd("C:/Users/Usuario/Dropbox/courses/ISGlobal_Anonymization/data")
+setwd("../data")
 file <- read.csv("synthdata.csv")
 View(file)
 

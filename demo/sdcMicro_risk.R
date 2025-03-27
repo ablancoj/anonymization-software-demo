@@ -5,7 +5,7 @@ install.packages("sdcMicro")
 library(sdcMicro) 
 library(tidyverse)
 
-wd <- "C:/Users/Usuario/Dropbox/courses/ISGlobal_Anonymization/data"
+wd <- "../data"
 setwd(wd)
 file_name <- "adult.csv"
 

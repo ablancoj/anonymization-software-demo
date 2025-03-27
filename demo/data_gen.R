@@ -2,7 +2,7 @@ library(tidyverse)
 
 set.seed(18032025)
 
-setwd("C:/Users/Usuario/Dropbox/courses/ISGlobal_Anonymization/data")
+setwd("../data")
 ca_prov <- read.csv("ca_prov.csv", header = TRUE, sep = ",")
 cob <- read.csv("cob.csv", header = TRUE, sep = ",")
 age_prob <- c(13.84, 15.80, 19.91, 23.69, 16.74, 10.02) / 100

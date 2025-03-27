@@ -1,7 +1,7 @@
 install.packages("sdcTable")
 library(sdcTable)
 
-wd <- "C:/Users/Usuario/Dropbox/courses/ISGlobal_Anonymization/data"
+wd <- "../data"
 setwd(wd)
 file_name <- "data.csv"
 

@@ -1,5 +1,4 @@
 # Anonymization Software Demo
-=============================
 
 Resources for the demonstration of some microdata and table anonymization software and libraries.
  
