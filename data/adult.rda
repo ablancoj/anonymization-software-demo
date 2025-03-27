@@ -1,0 +1,51 @@
+age 1 2 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+workclass 3 16 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+fnlwgt 19 7
+    <NUMERIC>
+    <WEIGHT>
+education 26 12 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+education.num 38 2
+    <NUMERIC>
+marital.status 40 21 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+occupation 61 17 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+relationship 78 14 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+race 92 18 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+sex 110 6 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+capital.gain 116 5 "."
+    <NUMERIC>
+capital.loss 121 4 "."
+    <NUMERIC>
+hours.per.week 125 2 "."
+    <NUMERIC>
+native.country 127 26 "."
+    <RECODABLE>
+    <IDLEVEL> 0
+    <SUPPRESSPRIORITY> 50
+class 153 5 "."
+    <RECODABLE>
+    <IDLEVEL> 0
+    <SUPPRESSPRIORITY> 50

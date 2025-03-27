@@ -1,0 +1,18 @@
+Age 1 2 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+Sex 3 6 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+Residence 9 22 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+PoB 31 25 "."
+    <RECODABLE>
+    <IDLEVEL> 2
+    <SUPPRESSPRIORITY> 50
+Income 56 6 "."
+    <NUMERIC>
