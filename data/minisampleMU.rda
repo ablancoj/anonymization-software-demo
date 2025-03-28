@@ -1,0 +1,19 @@
+age 1 2 "?"
+    <RECODABLE>
+    <NUMERIC>
+    <IDLEVEL> 0
+    <SUPPRESSPRIORITY> 50
+weight 3 2 "?"
+    <RECODABLE>
+    <NUMERIC>
+    <IDLEVEL> 0
+    <SUPPRESSPRIORITY> 50
+sbp 5 3 "?"
+    <RECODABLE>
+    <NUMERIC>
+    <IDLEVEL> 0
+    <SUPPRESSPRIORITY> 50
+aids 8 1 "?"
+    <RECODABLE>
+    <IDLEVEL> 0
+    <SUPPRESSPRIORITY> 50
