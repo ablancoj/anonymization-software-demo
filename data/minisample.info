@@ -1,0 +1,5 @@
+"colname" "nlevels" "position" "width" "digits" "exp"
+"1" "age" 0 1 2 0 0
+"2" "weight" 0 3 2 0 0
+"3" "sbp" 0 5 3 0 0
+"4" "aids" 0 8 1 0 0
