@@ -18,13 +18,14 @@ addmargins(xtabs( ~ residence + sex, microData))
 dim.sex <- sdcHierarchies::hier_create(root = "Sum", nodes = unique(microData$sex))
 sdcHierarchies::hier_display(dim.sex)
 
+dim.residence <- sdcHierarchies::hier_create(root = "Sum", nodes = unique(microData$residence))
 dim.residence <- sdcHierarchies::hier_create(root = "Sum", nodes = unique(residence.tax$CA))
 for (ca in unique(residence.tax$CA)) {
   dim.residence <- sdcHierarchies::hier_add(dim.residence, root = ca, nodes = residence.tax[residence.tax[,"CA"]==ca,"Prov"])
 }
 sdcHierarchies::hier_display(dim.residence)
 
-
+dim.country.birth <- sdcHierarchies::hier_create(root = "Sum", nodes = unique(microData$country.birth))
 dim.country.birth <- sdcHierarchies::hier_create(root = "Sum", nodes = unique(cob.tax$L0))
 for (l0 in unique(cob.tax$L0)) {
   dim.country.birth <- sdcHierarchies::hier_add(dim.country.birth, root = l0, nodes = unique(cob.tax[cob.tax[,"L0"]==l0,"L1"]))
@@ -38,10 +39,13 @@ for (l0 in unique(cob.tax$L0)) {
 sdcHierarchies::hier_display(dim.country.birth)
 
 problem <- makeProblem(microData,
-                       dimList = list(sex = dim.sex, country.birth = dim.country.birth),
-                       dimVarInd = c(2,4),
+                       dimList = list(residence = dim.residence, country.birth = dim.country.birth),
+                       dimVarInd = c(3,4),
                        numVarInd = 5)
 
+createArgusInput(problem,
+                 method="OPT",
+                 primSuppRules = list(list(type="freq", n=3, rg=10), list(type="p", n=5, p=20)))
 
 # Minimum frequency 3
 frequency <- primarySuppression(problem, type = "freq", maxN = 2)

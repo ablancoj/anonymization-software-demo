@@ -1,0 +1,14 @@
+age 1 2
+    <RECODEABLE>
+    <TOTCODE> "Total"
+sex 3 6
+    <RECODEABLE>
+    <TOTCODE> "Total"
+res 9 22
+    <RECODEABLE>
+    <TOTCODE> "Total"
+pob 31 25
+    <RECODEABLE>
+    <TOTCODE> "Total"
+income 56 6
+    <NUMERIC>
