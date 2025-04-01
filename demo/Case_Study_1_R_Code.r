@@ -176,6 +176,7 @@ print(sdcHH)
 # Calculate sample frequencies and count number of obs. violating k (3,5) - anonymity
 kAnon3 <- sum(sdcHH@risk$individual[,2] <3) 
 kAnon5 <- sum(sdcHH@risk$individual[,2] <5)
+kAnon3
 kAnon5
 
 # As percentage of total
@@ -185,10 +186,6 @@ kAnon5 / numHH
 # Show values of key variable of records that violate k-anonymity
 fileHH[sdcHH@risk$individual[,2] < 2, selectedKeyVarsHH] # 2-anonymity
 fileHH[sdcHH@risk$individual[,2] < 3, selectedKeyVarsHH] # 3-anonimity
-  
-# SUDA score (SUDA DIS score)
-# Histogram of SUDA scores
-hist(suda2(sdcHH)@risk$suda2$disScore)
 
 # Individual risk (per houshold)
 # Number of observations with relatively high risk
