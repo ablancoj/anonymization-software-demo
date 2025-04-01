@@ -173,15 +173,14 @@ fileAnonymized <- extractManipData(sdc)
 ### Household structure
 # HHVars <- c(...)
 # INDVars <- c(...)
-# fileIND <- c(...)
 # fileHH <- file[, HHVars]
 # fileHH <- unique(fileHH, by = c("HID"))
 # sdcHH <- createSdcObj(fileHH, ...)
 # HHmanip <- extractManipData(sdcHH)
 # fileIND <- file[, INDVars]
 # fileCombined <- merge(HHManip, fileIND, by = c("IND"))
-# ?selectHouseholdData
-# ?mergeHouseholdData
+?selectHouseholdData
+?mergeHouseholdData
 
 
 ####################
