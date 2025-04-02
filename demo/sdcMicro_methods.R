@@ -196,18 +196,36 @@ set.seed(5474572467824)
 ## PRAM Applied to pramKeys
 sdc <- pram(sdc)
 print(sdc, "pram")
+sdc <- undolast(sdc)
+attr(sdc, "pram_params")$native.country
 
 ## PRAM w/ minimum probabilities in the diagonal
 sdc <- pram(sdc, pd=0.8)
 print(sdc, "pram")
-sdc <- pram(sdc, pd=c(0.8, 0.5))
-print(sdc, "pram")
+View(sdc@pram$params$native.country$Rs)
+sdc <- undolast(sdc)
 
-attr(sdc, "pram_params")
 
 ## PRAM within strata (prevent impossible combinations)
 sdc <- pram(sdc, strata_variables = ("race"))
 print(sdc, "pram")
+sdc <- undolast(sdc)
+
+
+## PRAM with defined PRAM matrix
+mat <- diag(length(levels(sdc@origData$native.country)))
+mat[,] <- rep(c(1/length(levels(sdc@origData$native.country))), length(levels(sdc@origData$native.country)))
+rownames(mat) <- colnames(mat) <- levels(sdc@origData$native.country)
+mat
+
+sdc <- pram(sdc, pd = mat)
+print(sdc, "pram")
+
+sdc <- undolast(sdc)
+
+
+
+
 
 ######################
 ## Microaggregation ##
